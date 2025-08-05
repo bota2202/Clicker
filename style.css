@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: #ffffff;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(186, 186, 186, 1) 100%);
+    overflow-y: hidden;
+}
+
+
+
+#tela-inicial{
+    height: 75vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.6) 0%, rgba(30, 30, 30, 0.8) 100%);
+    border-radius: 5px;
+    box-shadow: 1.2px 1.2px 2px rgb(131, 131, 131);
+    border: 0.2px solid rgb(131,131,131);
+    
+}
+
+#valores-principal{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    top: -15vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+.valor{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: antiquewhite;
+}
+
+.btn-resetar{
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.btn-clicar{
+    background-color: rgb(153, 255, 0, 0.8);
+}
+
+.btn-clicar, .btn-resetar{
+    border: none;
+    border-radius: 5px;
+    height: 12vh;
+    width: 12vw;
+    font-size: 50px;
+    text-align: center;
+}
+
+#btns-menuprincipal{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    gap: 10%;
+    position: relative;
+    bottom: -50%;
+}
+
+#menu-clicker button:hover{
+    cursor: pointer;
+    transform: scale(107%);
+    transition: ease 0.5s;
+}
+
+#menu-clicker p:hover{
+    cursor: pointer;
+    transform: scale(107%);
+    transition: ease 0.2s;
+}
+
+/*Tela de reset*/
+
+#tela-resetar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    width: 60%;
+    height: 40%;
+    z-index: 999;
+}
+
+
+.dhidden{
+    display: none !important;
+}
+
+.vhidden{
+    visibility: hidden;
+}
+
+#overlay{
+    position: absolute;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 30, 30, 0.65);
+    z-index: 3;
+}
