@@ -94,11 +94,61 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    position: absolute;
-    width: 60%;
+    width: 100%;
     height: 40%;
     z-index: 999;
+    position:absolute;
+    background-color: aliceblue;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
 }
+
+#tela-resetar p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin-top: 2%;
+}
+
+#btns-reset-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+#btns-reset-menu button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: ease 1s;
+}
+
+#btns-reset-menu button{
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+
+#sreset{
+    background-color: rgba(0, 255, 0, 0.7);
+}
+
+#nreset{
+    background-color: rgba(255,0,0,0.7);
+}
+
+#nreset, #sreset{
+    border: none;
+    border-radius: 7px;
+    width: 10%;
+    height: 45%;
+}
+
+
 
 
 .dhidden{

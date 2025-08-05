@@ -32,7 +32,7 @@
                     <i class="fa-solid fa-arrow-pointer" style="color: #ffffff;"></i>
                 </button>
 
-                <button onclick="resetar()" class="btn-resetar">
+                <button onclick="trocaraba('tela-resetar')" class="btn-resetar">
                     <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
                 </button>
 
@@ -47,10 +47,11 @@
     <section id="tela-resetar" class="dhidden">
 
         <p>Deseja mesmo reiniciar?<br>Todo seu progresso será perdido</p>
+        <article id="btns-reset-menu">
+            <button id="sreset" onclick="confirmarreset()">Sim</button>
 
-        <button id="sreset" onclick="confirmarreset()">Sim</button>
-
-        <button id="nreset" onclick="cancelarreset()">Não</button>
+            <button id="nreset" onclick="cancelarreset()">Não</button>
+        </article>
     </section>
 
     <!--Overlay-->

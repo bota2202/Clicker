@@ -16,6 +16,26 @@ function atualizardados(){
     document.getElementById("moedas-principal").innerHTML = moedas +' <i class="fa-solid fa-coins" style="color: #ffc800;"></i>';
 }
 
+function confirmarreset(){
+    gemas=0
+    moedas=0
+    dois=false;
+    tres=false;
+    quatro=false;
+    cinco=false;
+    dez=false;
+    cinquenta=false;
+    cem=false;
+    atualizardados()
+    trocaraba('tela-inicial')
+    ocultaroverlay()
+}
+
+function cancelarreset(){
+    trocaraba('tela-inicial')
+    ocultaroverlay()
+}
+
 function clicar(){
     if(dois==true){
         moedas+=2;
@@ -37,7 +57,14 @@ function clicar(){
     atualizardados();
 }
 
-function resetar(){
+function trocaraba(secao){
+    document.getElementById("overlay").classList.add("dhidden")
+    document.getElementById("tela-resetar").classList.add("dhidden")
+
     document.getElementById("overlay").classList.remove("dhidden")
-    document.getElementById("tela-resetar").classList.remove("dhidden")
+    document.getElementById(secao).classList.remove("dhidden")
+}
+
+function ocultaroverlay(){
+    document.getElementById("overlay").classList.add("dhidden")
 }
