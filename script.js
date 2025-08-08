@@ -68,3 +68,12 @@ function trocaraba(secao){
 function ocultaroverlay(){
     document.getElementById("overlay").classList.add("dhidden")
 }
+
+function expandirloja(){
+    let produtos=document.getElementById('aba-produtos')
+    if(produtos.classList=="dhidden"){
+        produtos.classList.remove("dhidden")
+    }else{
+        produtos.classList.add("dhidden")
+    }
+}
