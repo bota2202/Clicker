@@ -106,13 +106,14 @@ body {
     background-color: aliceblue;
     flex-direction: column;
     gap: 10px;
+    margin: 1%;
     text-align: center;
 }
 
 #tela-resetar p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 170%;
-    margin-top: 4%;
+    margin-top: 1.5%;
 }
 
 #btns-reset-menu{
@@ -150,7 +151,7 @@ body {
     border: none;
     border-radius: 7px;
     width: 10%;
-    height: 35%;
+    height: 60%;
 }
 
 /*Loja*/
@@ -159,12 +160,12 @@ body {
     position: absolute;
     top: 1%;
     left: 0.7%;
-    width: 10%;
+    width: 17%;
     height: 9%;
     border-radius: 7px;
     border: none;
-    font-size: 250%;
-    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.7) 0%, rgba(30, 30, 30, 0.9) 100%);
+    font-size: 1.5vw;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.6) 0%, rgba(30, 30, 30, 0.8) 100%);
     color: white;
 }
 
@@ -179,19 +180,54 @@ body {
     top: 11%;
     left: 0.7%;
     display: flex;
-    height: 50%;
+    height: 35%;
     width: 17%;
     border-radius: 10px;
     border: 1px gray solid;
     background-color: aliceblue;
     align-items: center;
     justify-content: center;
+    gap: 13%;
     flex-direction: column;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.6) 0%, rgba(30, 30, 30, 0.8) 100%);
+}
+
+.btn-produto{
+    width: 85%;
+    height: 25%;
+    border-radius: 10px;
+    border: none;
+    background-color: #cfe9ff;
+}
+
+.btn-produto:hover{
+    cursor: pointer;
 }
 
 
 
 /*Globais*/
+
+.icone-desabilitado{
+    position: absolute;
+    display: flex;
+    font-size: 340%;
+    left: 42%;
+    justify-self: center;
+    align-self: center;
+    color: rgba(0, 0, 0, 0.4);
+    z-index: 88;
+}
+
+:disabled{
+    color: black;
+}
+
+:disabled:hover{
+    cursor: not-allowed;
+}
 
 .dhidden{
     display: none !important;
